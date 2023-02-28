@@ -1,0 +1,148 @@
+version: "3.1"
+
+intents:
+  # default
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  # fun
+  - asking_joke
+  - laughter
+  # math
+  - numbering
+  - add
+  - subtract
+  - multiply
+  - divide
+
+entities:
+  - first_number
+  - second_number
+  - operation
+
+slots:
+
+  first_number:
+    type: float
+    mappings:
+      - type: from_entity
+        entity: first_number
+
+  second_number:
+    type: float
+    mappings:
+      - type: from_entity
+        entity: second_number
+
+  operation:
+    type: text
+    mappings:
+      - type: from_intent
+        value: 'add'
+        intent: add
+      - type: from_intent
+        value: 'subtract'
+        intent: subtract
+      - type: from_intent
+        value: 'divide'
+        intent: divide
+      - type: from_intent
+        value: 'multiply'
+        intent: multiply
+  result:
+    type: float
+    mappings:
+      - type: custom
+
+actions:
+
+  - record_first_number
+  - record_second_number
+  - action_calculate
+
+responses:
+
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Hi! What's up?"
+  - text: "Hi :)"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+  - text: "How do you feel now?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+  - text: "I am glad to hear you're happy!"
+  - text: "That's good for you!"
+
+  utter_sad_face:
+  - text: ":("
+  - text: "i_i"
+  - text: ":["
+  - text: ":'("
+  - text: ":'["
+
+  utter_happy_face:
+  - text: ":)"
+  - text: ";)"
+  - text: ":]"
+  - text: ":D"
+  - text: "xD"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Take care"
+  - text: "See you there!"
+  - text: "Goodbye!"
+
+  utter_iamabot:
+  - text: "Call me Bob. I am a math bot but I also like to talk with people a lot"
+  - text: "I am Bob. I do simple math. I am known as simple math Bob!"
+  - text: "I am Bob. I like doing math!"
+  - text: "I am Bob the math bot. I can do simple math for you but also feel free to just talk anything"
+
+  # fun
+
+  utter_joke:
+  - text: "What is the most shocking city? - Electricity 😂"
+  - text: "What did the cow say when it wanted to watch a film? - Let's go to the mooooooovies 🐮"
+  - text: "Why did the letter B felt cold? - Because its between the AC 🥶"
+  - text: "Why are cricket stadiums cool? - Becuase it has many fans 😂"
+  - text: "Where do cauliflowers hangout? - The Gobi desert 🌵"
+
+
+  # math
+  utter_ask_numbers:
+  - text: "Enter the numbers"
+  - text: "Enter two numbers"
+  - text: "Please provide two numbers to continue"
+  - text: "Which numbers should I {operation}?"
+
+  utter_choose_operation:
+  - text: "I do math. What do you want me to do?"
+    buttons:
+    - title: "Add"
+      payload: "/add"
+    - title: "Subtract"
+      payload: "/subtract"
+    - title: "Multiply"
+      payload: "/multiply"
+    - title: "Divide"
+      payload: "/divide"
+
+  utter_fallback_counters:
+  - text: "I am sorry, I don't quite get you.. let me know if you want to do math!"
+  - text: "Uh, I don't quite get you.. just let me know if you want to do math!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

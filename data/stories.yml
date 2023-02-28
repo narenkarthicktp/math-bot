@@ -1,0 +1,63 @@
+version: "3.1"
+
+stories:
+
+# defaults
+
+- story: sad path then happy
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path sad still
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sad_face
+
+# math
+
+- story: math story setup
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - checkpoint: the_beginning
+
+- story: math story the rest
+  steps:
+    - checkpoint: the_beginning
+    - action: utter_choose_operation
+    - or:
+      - intent: add
+      - intent: subtract
+      - intent: multiply
+      - intent: divide
+    - action: utter_ask_numbers
+    - intent: numbering
+      entities:
+      - first_number
+      - second_number
+    - action: action_calculate
+
+- story: wait for a math story
+  steps:
+    - checkpoint: the_beginning
+    - action: utter_choose_operation
+    - intent: nlu_fallback
+    - action: utter_fallback_counters
+    - intent: affirm
+    - checkpoint: the_beginning
+
+- story: not a math story still
+  steps:
+    - checkpoint: the_beginning
+    - action: utter_choose_operation
+    - intent: nlu_fallback
+    - action: utter_fallback_counters
+    - intent: deny
+    - action: utter_goodbye

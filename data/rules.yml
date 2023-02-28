@@ -1,0 +1,35 @@
+version: "3.1"
+
+rules:
+
+# defaults
+
+- rule: happy path
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: tell a joke if the user wants
+  steps:
+  - intent: asking_joke
+  - action: utter_joke
+
+- rule: Be happy if user is happy
+  steps:
+  - intent: laughter
+  - action: utter_happy_face
+
+- rule: handling fallbacks and user does math
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback_counters

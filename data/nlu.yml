@@ -1,0 +1,150 @@
+version: "3.1"
+
+nlu:
+
+# defaults [ and I have also messed up with some ]
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - have a great time!
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yesss!
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - not at all
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - What is this?
+    - ?
+    - What is going on?
+    - anybody?
+
+# fun
+
+- intent: asking_joke
+  examples: |
+    - Can you joke?
+    - Tell me a joke.
+    - Tell me something funny.
+    - Make me laugh
+
+- intent: laughter
+  examples: |
+    - Haha
+    - Hahahahaha!
+    - You're funny!
+    - nice
+    - haha, thats funny!
+    - Yay!
+    - Haha very nice!!
+    - xD
+    - :)
+
+# math
+
+- intent: numbering
+  examples: |
+    - [1](first_number) and [2](second_number)
+    - [34](first_number), [69](second_number)
+    - first number is [45](first_number) and the second number is [78](second_number)
+    - [10](first_number) [20](second_number)
+    - [10627909](first_number) [64387520](second_number)
+    - [-123](first_number) [567.2](second_number)
+    - [12.2](first_number) [-9](second_number)
+    - [10](first_number) & [20](second_number)
+    - they are [10](first_number) and [20](second_number)
+    - the operands are [10](first_number) and [20](second_number)
+
+- intent: add
+  examples: |
+    - add
+- intent: subtract
+  examples: |
+    - subtract
+- intent: multiply
+  examples: |
+    - multiply
+- intent: divide
+  examples: |
+    - divide
