@@ -28,10 +28,14 @@
   ```
 ## Preview
 
-<img src=".\screenshots\preview1.jpg" margin="20px"></img>
-<img src=".\screenshots\preview2.jpg" margin="20px"></img>
+<img src=".\screenshots\preview1.jpg" style="display: block;"></img>
+      
+<img src=".\screenshots\preview2.jpg" style="display: block;"></img>
+   
  <hr>
-<img src=".\screenshots\preview3.jpg" margin="20px"></img>
+<img src=".\screenshots\preview3.jpg" style="display: block;"></img>
+     
  <hr>
-<img src=".\screenshots\preview4.jpg" margin="20px"></img>
-<img src=".\screenshots\preview5.jpg" margin="20px"></img>
+<img src=".\screenshots\preview4.jpg" style="display: block;"></img>
+      
+ <img src=".\screenshots\preview5.jpg" style="display: block;"></img>
