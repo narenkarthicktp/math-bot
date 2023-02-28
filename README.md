@@ -4,12 +4,6 @@
 
 ## Previews
 
-#### CASE 1 :
-<img src=".\screenshots\case1.jpg" style="display: block;"></img>
-#### CASE 2 :
-<img src=".\screenshots\case2.jpg" style="display: block;"></img>
-
-<hr>
 <img src=".\screenshots\preview1.jpg" style="display: block;"></img>
 
 <img src=".\screenshots\preview2.jpg" style="display: block;"></img>
@@ -21,6 +15,12 @@
 <img src=".\screenshots\preview4.jpg" style="display: block;"></img>
 
  <img src=".\screenshots\preview5.jpg" style="display: block;"></img>
+
+<h1>
+#### CASE 1 :
+<img src=".\screenshots\case1.jpg" style="display: block;"></img>
+#### CASE 2 :
+<img src=".\screenshots\case2.jpg" style="display: block;"></img>
 
  ### Getting started
 
