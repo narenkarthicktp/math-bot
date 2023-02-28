@@ -1,4 +1,4 @@
-## Chatbot to for simple math
+## Chatbot for doing simple math
 
 ### Getting started
 
