@@ -1,9 +1,31 @@
 ## Chatbot for doing simple math
 
-### Getting started
+## Task : Build a Bot to do basic mathematical operations
+
+## Previews
+
+#### CASE 1 :
+<img src=".\screenshots\case1.jpg" style="display: block;"></img>
+#### CASE 2 :
+<img src=".\screenshots\case2.jpg" style="display: block;"></img>
+
+<hr>
+<img src=".\screenshots\preview1.jpg" style="display: block;"></img>
+
+<img src=".\screenshots\preview2.jpg" style="display: block;"></img>
+
+ <hr>
+<img src=".\screenshots\preview3.jpg" style="display: block;"></img>
+
+ <hr>
+<img src=".\screenshots\preview4.jpg" style="display: block;"></img>
+
+ <img src=".\screenshots\preview5.jpg" style="display: block;"></img>
+
+ ### Getting started
 
  - Ensure you have python and pip
- - install the requirements using,
+ - install the requirements using
 
  ``` shell
   pip install -r requirements.txt
@@ -26,16 +48,3 @@
   ``` shell
   Your input -> /stop
   ```
-## Preview
-
-<img src=".\screenshots\preview1.jpg" style="display: block;"></img>
-      
-<img src=".\screenshots\preview2.jpg" style="display: block;"></img>
-   
- <hr>
-<img src=".\screenshots\preview3.jpg" style="display: block;"></img>
-     
- <hr>
-<img src=".\screenshots\preview4.jpg" style="display: block;"></img>
-      
- <img src=".\screenshots\preview5.jpg" style="display: block;"></img>
