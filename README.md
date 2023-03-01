@@ -1,29 +1,15 @@
 ## Chatbot for doing simple math
 
-## Task : Build a Bot to do basic mathematical operations
+### Task : Build a Bot to do basic mathematical operations
 
-## Previews
+ #### Notes
+   - Bonus - Handle small talk in English (basic greetings)
+   - Build your Chatbot in any language of your choice (Preferred - RASA)
 
-<img src=".\screenshots\preview1.jpg" style="display: block;"></img>
+ #### Deliverables
+   - Push the code into public GitHub repo and also add screenshots of your output
 
-<img src=".\screenshots\preview2.jpg" style="display: block;"></img>
-
- <hr>
-<img src=".\screenshots\preview3.jpg" style="display: block;"></img>
-
- <hr>
-<img src=".\screenshots\preview4.jpg" style="display: block;"></img>
-
- <img src=".\screenshots\preview5.jpg" style="display: block;"></img>
-
-<h1>
-
-#### CASE 1 :
-<img src=".\screenshots\case1.jpg" style="display: block;"></img>
-#### CASE 2 :
-<img src=".\screenshots\case2.jpg" style="display: block;"></img>
-
- ### Getting started
+ <!-- ## Getting started
 
  - Ensure you have python and pip
  - install the requirements using
@@ -48,4 +34,21 @@
   - Use /stop to quit
   ``` shell
   Your input -> /stop
-  ```
+  ``` -->
+
+## Previews
+
+#### CASE 1 :
+<img src=".\screenshots\preview1.jpg" style="display: block;"></img>
+   
+<img src=".\screenshots\case1.jpg" style="display: block;"></img>
+   
+#### CASE 2 :
+<img src=".\screenshots\case2.jpg" style="display: block;"></img>
+   
+#### BONUS :
+<img src=".\screenshots\preview3.jpg" style="display: block;"></img>
+   
+<img src=".\screenshots\preview4.jpg" style="display: block;"></img>
+   
+ <img src=".\screenshots\preview5.jpg" style="display: block;"></img>
