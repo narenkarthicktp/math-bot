@@ -39,16 +39,16 @@
 ## Previews
 
 #### CASE 1 :
-<img src=".\screenshots\preview1.jpg" style="display: block;"></img>
+<img src=".\screenshots\case1a.png" style="display: block;"></img>
    
-<img src=".\screenshots\case1.jpg" style="display: block;"></img>
+<img src=".\screenshots\case1b.png" style="display: block;"></img>
    
 #### CASE 2 :
-<img src=".\screenshots\case2.jpg" style="display: block;"></img>
+<img src=".\screenshots\case2.png" style="display: block;"></img>
    
 #### BONUS :
-<img src=".\screenshots\preview3.jpg" style="display: block;"></img>
+<img src=".\screenshots\bonus1.png" style="display: block;"></img>
    
-<img src=".\screenshots\preview4.jpg" style="display: block;"></img>
+<img src=".\screenshots\bonus2a.png" style="display: block;"></img>
    
- <img src=".\screenshots\preview5.jpg" style="display: block;"></img>
+ <img src=".\screenshots\bonus2b.png" style="display: block;"></img>
